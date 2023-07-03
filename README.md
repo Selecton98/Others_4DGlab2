@@ -1,2 +1,2 @@
 # Others_4DGlab2
-ATACseq, DEXseq
+ATACseq, DEXseq, STAR-Fusion
