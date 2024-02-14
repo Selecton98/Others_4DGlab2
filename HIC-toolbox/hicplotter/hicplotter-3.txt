@@ -1,0 +1,16 @@
+XIST
+#chrX:100214149–101420149 ##mm9
+#chrX: 73,820,649-73,852,723 ##hg38
+TSIX
+#chrX: 73,792,205-73,829,231  ##hg38 
+
+range
+#chrX: 73,570,000-74,400,000 ##hg38
++250，000
++550，000
+
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-naive/raw/10000/cleanF-naive_10000_iced.matrix  ./cleanF-IgD/raw/10000/cleanF-IgD_10000_iced.matrix   -bed ./cleanZ-naive/raw/10000/cleanZ-naive_10000_abs.bed -n F-naive F-IgD -chr chrX -r 10000 -o Factivation -c 1 -s 7370 -e 7390 -ext pdf -tri 1 -p 1 -hmc 1 &
+
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-naive/raw/10000/cleanF-naive_10000_iced.matrix  ./cleanF-IgD/raw/10000/cleanF-IgD_10000_iced.matrix   -bed ./cleanZ-naive/raw/10000/cleanZ-naive_10000_abs.bed -n F-naive F-IgD -chr chrX -r 10000 -o Factivationbig -c 1 -s 6000 -e 11000 -ext pdf -tri 1 -p 1 -hmc 1 &
+
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-naive/raw/10000/cleanF-naive_10000_iced.matrix  ./cleanF-IgD/raw/10000/cleanF-IgD_10000_iced.matrix   -bed ./cleanZ-naive/raw/10000/cleanZ-naive_10000_abs.bed -n F-naive F-IgD -chr chrX -r 10000 -o FactivationTADS -c 1 -s 7357 -e 7440 -ext pdf -tri 1 -p 1 -hmc 1 &

@@ -1,0 +1,3 @@
+nohup java -jar 3DMax.jar parameters.txt &
+nohup java -jar 3DMax.jar parameters2.txt &
+nohup java -jar 3DMax.jar parameters3.txt &

@@ -1,0 +1,92 @@
+/home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py
+
+./cleanZ-naive/raw/10000/cleanZ-naive_10000_abs.bed
+
+
+
+./cleanF-IgD/raw/10000/cleanF-IgD_10000_iced.matrix
+
+
+
+awk '{print "chr" $0}' fileName
+awk '{print $1,$2,$3,$4}' filename
+
+###green1,green2
+
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-IgD/raw/5000/cleanF-IgD_5000_iced.matrix  ./cleanZ-IgD/raw/5000/cleanZ-IgD_5000_iced.matrix ./cleanM-IgD/raw/5000/cleanM-IgD_5000_iced.matrix -bed ./cleanZ-IgD/raw/5000/cleanZ-IgD_5000_abs.bed  -n F-IgDn Z-IgDn M-IgDn -chr chrX -r 5000 -o FZMIGDpair -c 1 -s 4720 -e 4770 -ext pdf -tri 1 -p 1 &
+
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-naive/raw/5000/cleanF-naive_5000_iced.matrix  ./cleanZ-naive/raw/5000/cleanZ-naive_5000_iced.matrix ./cleanM-naive/raw/5000/cleanM-naive_5000_iced.matrix -bed ./cleanZ-naive/raw/5000/cleanZ-naive_5000_abs.bed  -n F-naive Z-naive M-naive -chr chrX -r 5000 -o FZMNAIVEpair -c 1 -s 4720 -e 4770 -ext pdf -tri 1 -p 1 &
+
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-IgD/raw/5000/cleanF-IgD_5000_iced.matrix  ./cleanZ-IgD/raw/5000/cleanZ-IgD_5000_iced.matrix ./cleanM-IgD/raw/5000/cleanM-IgD_5000_iced.matrix -bed ./cleanZ-IgD/raw/5000/cleanZ-IgD_5000_abs.bed  -n F-IgDn Z-IgDn M-IgDn -chr chrX -r 5000 -o FZMIGDpair -c 1 -s 4700 -e 4800 -ext pdf -tri 1 -p 1 &
+
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-naive/raw/5000/cleanF-naive_5000_iced.matrix  ./cleanZ-naive/raw/5000/cleanZ-naive_5000_iced.matrix ./cleanM-naive/raw/5000/cleanM-naive_5000_iced.matrix -bed ./cleanZ-naive/raw/5000/cleanZ-naive_5000_abs.bed  -n F-naive Z-naive M-naive -chr chrX -r 5000 -o FZMNAIVEpair -c 1 -s 4700 -e 4800 -ext pdf -tri 1 -p 1 &
+
+###yellow
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-IgD/raw/5000/cleanF-IgD_5000_iced.matrix  ./cleanZ-IgD/raw/5000/cleanZ-IgD_5000_iced.matrix ./cleanM-IgD/raw/5000/cleanM-IgD_5000_iced.matrix -bed ./cleanZ-IgD/raw/5000/cleanZ-IgD_5000_abs.bed  -n F-IgDn Z-IgDn M-IgDn -chr chrX -r 5000 -o FZMIGDpair -c 1 -s 2000 -e 2050 -ext pdf -tri 1 -p 1 &
+
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-naive/raw/5000/cleanF-naive_5000_iced.matrix  ./cleanZ-naive/raw/5000/cleanZ-naive_5000_iced.matrix ./cleanM-naive/raw/5000/cleanM-naive_5000_iced.matrix -bed ./cleanZ-naive/raw/5000/cleanZ-naive_5000_abs.bed  -n F-naive Z-naive M-naive -chr chrX -r 5000 -o FZMNAIVEpair -c 1 -s 2000 -e 2050 -ext pdf -tri 1 -p 1 &
+
+
+
+###red
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-IgD/raw/5000/cleanF-IgD_5000_iced.matrix  ./cleanZ-IgD/raw/5000/cleanZ-IgD_5000_iced.matrix ./cleanM-IgD/raw/5000/cleanM-IgD_5000_iced.matrix -bed ./cleanZ-IgD/raw/5000/cleanZ-IgD_5000_abs.bed  -n F-IgDn Z-IgDn M-IgDn -chr chrX -r 5000 -o FZMIGDpair -c 1 -s 520 -e 570 -ext pdf -tri 1 -p 1 &
+
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-naive/raw/5000/cleanF-naive_5000_iced.matrix  ./cleanZ-naive/raw/5000/cleanZ-naive_5000_iced.matrix ./cleanM-naive/raw/5000/cleanM-naive_5000_iced.matrix -bed ./cleanZ-naive/raw/5000/cleanZ-naive_5000_abs.bed  -n F-naive Z-naive M-naive -chr chrX -r 5000 -o FZMNAIVEpair -c 1 -s 520 -e 570 -ext pdf -tri 1 -p 1 &
+
+
+###orange
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-IgD/raw/5000/cleanF-IgD_5000_iced.matrix  ./cleanZ-IgD/raw/5000/cleanZ-IgD_5000_iced.matrix ./cleanM-IgD/raw/5000/cleanM-IgD_5000_iced.matrix -bed ./cleanZ-IgD/raw/5000/cleanZ-IgD_5000_abs.bed  -n F-IgDn Z-IgDn M-IgDn -chr chrX -r 5000 -o FZMIGDpair -c 1 -s 200 -e 300 -ext pdf -tri 1 -p 1 &
+
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-naive/raw/5000/cleanF-naive_5000_iced.matrix  ./cleanZ-naive/raw/5000/cleanZ-naive_5000_iced.matrix ./cleanM-naive/raw/5000/cleanM-naive_5000_iced.matrix -bed ./cleanZ-naive/raw/5000/cleanZ-naive_5000_abs.bed  -n F-naive Z-naive M-naive -chr chrX -r 5000 -o FZMNAIVEpair -c 1 -s 200 -e 300 -ext pdf -tri 1 -p 1 &
+
+
+###blue
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-IgD/raw/5000/cleanF-IgD_5000_iced.matrix  ./cleanZ-IgD/raw/5000/cleanZ-IgD_5000_iced.matrix ./cleanM-IgD/raw/5000/cleanM-IgD_5000_iced.matrix -bed ./cleanZ-IgD/raw/5000/cleanZ-IgD_5000_abs.bed  -n F-IgDn Z-IgDn M-IgDn -chr chrX -r 5000 -o FZMIGDpair -c 1 -s 14740 -e 14790 -ext pdf -tri 1 -p 1 &
+
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-naive/raw/5000/cleanF-naive_5000_iced.matrix  ./cleanZ-naive/raw/5000/cleanZ-naive_5000_iced.matrix ./cleanM-naive/raw/5000/cleanM-naive_5000_iced.matrix -bed ./cleanZ-naive/raw/5000/cleanZ-naive_5000_abs.bed  -n F-naive Z-naive M-naive -chr chrX -r 5000 -o FZMNAIVEpair -c 1 -s 14740 -e 14790 -ext pdf -tri 1 -p 1 &
+
+
+
+###grey
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-IgD/raw/5000/cleanF-IgD_5000_iced.matrix  ./cleanZ-IgD/raw/5000/cleanZ-IgD_5000_iced.matrix ./cleanM-IgD/raw/5000/cleanM-IgD_5000_iced.matrix -bed ./cleanZ-IgD/raw/5000/cleanZ-IgD_5000_abs.bed  -n F-IgDn Z-IgDn M-IgDn -chr chrX -r 5000 -o FZMIGDpair -c 1 -s 21520 -e 21570 -ext pdf -tri 1 -p 1 &
+
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-naive/raw/5000/cleanF-naive_5000_iced.matrix  ./cleanZ-naive/raw/5000/cleanZ-naive_5000_iced.matrix ./cleanM-naive/raw/5000/cleanM-naive_5000_iced.matrix -bed ./cleanZ-naive/raw/5000/cleanZ-naive_5000_abs.bed  -n F-naive Z-naive M-naive -chr chrX -r 5000 -o FZMNAIVEpair -c 1 -s 21520 -e 21570 -ext pdf -tri 1 -p 1 &
+
+##olive
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-IgD/raw/5000/cleanF-IgD_5000_iced.matrix  ./cleanZ-IgD/raw/5000/cleanZ-IgD_5000_iced.matrix ./cleanM-IgD/raw/5000/cleanM-IgD_5000_iced.matrix -bed ./cleanZ-IgD/raw/5000/cleanZ-IgD_5000_abs.bed  -n F-IgDn Z-IgDn M-IgDn -chr chrX -r 5000 -o FZMIGDpair -c 1 -s 23820 -e 23870 -ext pdf -tri 1 -p 1 &
+
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-naive/raw/5000/cleanF-naive_5000_iced.matrix  ./cleanZ-naive/raw/5000/cleanZ-naive_5000_iced.matrix ./cleanM-naive/raw/5000/cleanM-naive_5000_iced.matrix -bed ./cleanZ-naive/raw/5000/cleanZ-naive_5000_abs.bed  -n F-naive Z-naive M-naive -chr chrX -r 5000 -o FZMNAIVEpair -c 1 -s 23820 -e 23870 -ext pdf -tri 1 -p 1 &
+
+##egg
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-IgD/raw/5000/cleanF-IgD_5000_iced.matrix  ./cleanZ-IgD/raw/5000/cleanZ-IgD_5000_iced.matrix ./cleanM-IgD/raw/5000/cleanM-IgD_5000_iced.matrix -bed ./cleanZ-IgD/raw/5000/cleanZ-IgD_5000_abs.bed  -n F-IgDn Z-IgDn M-IgDn -chr chrX -r 5000 -o FZMIGDpair -c 1 -s 30720 -e 30770 -ext pdf -tri 1 -p 1 &
+
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-naive/raw/5000/cleanF-naive_5000_iced.matrix  ./cleanZ-naive/raw/5000/cleanZ-naive_5000_iced.matrix ./cleanM-naive/raw/5000/cleanM-naive_5000_iced.matrix -bed ./cleanZ-naive/raw/5000/cleanZ-naive_5000_abs.bed  -n F-naive Z-naive M-naive -chr chrX -r 5000 -o FZMNAIVEpair -c 1 -s 30720 -e 30770 -ext pdf -tri 1 -p 1 &
+
+##white
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-IgD/raw/5000/cleanF-IgD_5000_iced.matrix  ./cleanZ-IgD/raw/5000/cleanZ-IgD_5000_iced.matrix ./cleanM-IgD/raw/5000/cleanM-IgD_5000_iced.matrix -bed ./cleanZ-IgD/raw/5000/cleanZ-IgD_5000_abs.bed  -n F-IgDn Z-IgDn M-IgDn -chr chrX -r 5000 -o FZMIGDpair -c 1 -s 30830 -e 30880 -ext pdf -tri 1 -p 1 &
+
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-naive/raw/5000/cleanF-naive_5000_iced.matrix  ./cleanZ-naive/raw/5000/cleanZ-naive_5000_iced.matrix ./cleanM-naive/raw/5000/cleanM-naive_5000_iced.matrix -bed ./cleanZ-naive/raw/5000/cleanZ-naive_5000_abs.bed  -n F-naive Z-naive M-naive -chr chrX -r 5000 -o FZMNAIVEpair -c 1 -s 30830 -e 30880 -ext pdf -tri 1 -p 1 &
+
+
+##low res chrom
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-IgD/raw/100000/cleanF-IgD_100000_iced.matrix -n F-IgDn -bed ./cleanF-IgD/raw/100000/cleanF-IgD_100000_abs.bed -chr chrX -r 100000 -o FIGDall2 -ext pdf -tri 1 &
+
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanZ-IgD/raw/100000/cleanZ-IgD_100000_iced.matrix -n Z-IgDn -bed ./cleanZ-IgD/raw/100000/cleanZ-IgD_100000_abs.bed -chr chrX -r 100000 -o ZIGDall2 -ext pdf -tri 1 &
+
+
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanM-IgD/raw/100000/cleanM-IgD_100000_iced.matrix -n M-IgDn -bed ./cleanM-IgD/raw/100000/cleanM-IgD_100000_abs.bed -chr chrX -r 100000 -o MIGDall2 -ext pdf -tri 1 &
+
+
+##high res chrom
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-IgD/raw/10000/cleanF-IgD_10000_iced.matrix -n F-IgDn -bed ./cleanF-IgD/raw/10000/cleanF-IgD_10000_abs.bed -chr chrX -r 10000 -o FIGDall2 -ext pdf -tri 1 &
+
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanZ-IgD/raw/10000/cleanZ-IgD_10000_iced.matrix -n Z-IgDn -bed ./cleanZ-IgD/raw/10000/cleanZ-IgD_10000_abs.bed -chr chrX -r 10000 -o ZIGDall2 -ext pdf -tri 1 &
+
+
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanM-IgD/raw/10000/cleanM-IgD_10000_iced.matrix -n M-IgDn -bed ./cleanM-IgD/raw/10000/cleanM-IgD_10000_abs.bed -chr chrX -r 10000 -o MIGDall2 -ext pdf -tri 1 &
+
+#-hist ./CDB10kb/ZD3.txt -hl Z_IgD_CDB 
+#chr gene
+
+
+

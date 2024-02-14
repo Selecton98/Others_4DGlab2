@@ -1,0 +1,21 @@
+awk '{print "chr"$0}' 2.2_CDB.txt >2.2_CDB.bed
+awk '{print "chr"$0}' 2.3_CDB.txt >2.3_CDB.bed
+awk '{print "chr"$0}' 5.2_CDB.txt >5.2_CDB.bed
+awk '{print "chr"$0}' 5.4_CDB.txt >5.4_CDB.bed
+awk '{print "chr"$0}' 8.1_CDB.txt >8.1_CDB.bed
+awk '{print "chr"$0}' 8.5_CDB.txt >8.5_CDB.bed
+
+awk '{print $2"\t"$3"\t"$4}' ckoup12.homer >ckoup12.bed
+
+awk '{print $2"\t"$3"\t"$4}' flup200.homer >flup200.bed
+
+bedtools subtract -a 8.5_CDB.bed -b 8.1_CDB.bed -A > 8.5diff.bed
+
+bedtools subtract -a 8.1_CDB.bed -b 8.5_CDB.bed -A > 8.1diff.bed
+
+bedtools subtract -a 2.2_CDB.bed -b 2.3_CDB.bed -A > 2.2diff.bed
+
+bedtools subtract -a 2.3_CDB.bed -b 2.2_CDB.bed -A > 2.3diff.bed
+
+bedtools intersect -a ckoup12.bed -b 2.2diff.bed -wao >  ckoup12CTCF.bed
+bedtools intersect -a flup200.bed -b 8.1diff.bed -wao >  flup200CTCF.bed

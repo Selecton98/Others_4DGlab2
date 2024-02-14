@@ -1,0 +1,5 @@
+annotatePeaks.pl 2_wt_CDB.homer /data02/zhoujiaqi/index/bowtie2.index/GRCm38.p6.genome.fa -gtf /data02/zhoujiaqi/index/gencode.vM24.annotation.gtf  > 2_wt_CDB.txt
+annotatePeaks.pl flup200.homer /data02/zhoujiaqi/index/bowtie2.index/GRCm38.p6.genome.fa -gtf /data02/zhoujiaqi/index/gencode.vM24.annotation.gtf  > flup200.detail.txt
+
+
+annotatePeaks.pl ATAC-12#-edgeR.txt /data02/zhoujiaqi/index/bowtie2.index/GRCm38.p6.genome.fa -gtf /data02/zhoujiaqi/index/gencode.vM24.annotation.gtf  >ATAC-12#-anno.txt

@@ -1,0 +1,116 @@
+/home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py
+
+./cleanZ-naive/raw/10000/cleanZ-naive_10000_abs.bed
+
+
+
+./cleanF-IgD/raw/10000/cleanF-IgD_10000_iced.matrix
+
+
+
+awk '{print "chr" $0}' fileName
+awk '{print $1,$2,$3,$4}' filename
+
+###green1
+
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-IgD/raw/10000/cleanF-IgD_10000_iced.matrix  ./cleanZ-IgD/raw/10000/cleanZ-IgD_10000_iced.matrix ./cleanM-IgD/raw/10000/cleanM-IgD_10000_iced.matrix -bed ./cleanZ-IgD/raw/10000/cleanZ-IgD_10000_abs.bed  -n F-IgDn Z-IgDn M-IgDn -chr chrX -r 10000 -o FZMIGDpair -c 1 -s 2350 -e 2400 -ext pdf -tri 1 -p 1 &
+
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-naive/raw/10000/cleanF-naive_10000_iced.matrix  ./cleanZ-naive/raw/10000/cleanZ-naive_10000_iced.matrix ./cleanM-naive/raw/10000/cleanM-naive_10000_iced.matrix -bed ./cleanZ-naive/raw/10000/cleanZ-naive_10000_abs.bed  -n F-naive Z-naive M-naive -chr chrX -r 10000 -o FZMNAIVEpair -c 1 -s 2350 -e 2400 -ext pdf -tri 1 -p 1 &
+
+
+###yellow
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-IgD/raw/10000/cleanF-IgD_10000_iced.matrix  ./cleanZ-IgD/raw/10000/cleanZ-IgD_10000_iced.matrix ./cleanM-IgD/raw/10000/cleanM-IgD_10000_iced.matrix -bed ./cleanZ-IgD/raw/10000/cleanZ-IgD_10000_abs.bed  -n F-IgDn Z-IgDn M-IgDn -chr chrX -r 10000 -o FZMIGDpair -c 1 -s 970 -e 1020 -ext pdf -tri 1 -p 1 &
+
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-naive/raw/10000/cleanF-naive_10000_iced.matrix  ./cleanZ-naive/raw/10000/cleanZ-naive_10000_iced.matrix ./cleanM-naive/raw/10000/cleanM-naive_10000_iced.matrix -bed ./cleanZ-naive/raw/10000/cleanZ-naive_10000_abs.bed  -n F-naive Z-naive M-naive -chr chrX -r 10000 -o FZMNAIVEpair -c 1 -s 970 -e 1020 -ext pdf -tri 1 -p 1 &
+
+
+
+###red
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-IgD/raw/10000/cleanF-IgD_10000_iced.matrix  ./cleanZ-IgD/raw/10000/cleanZ-IgD_10000_iced.matrix ./cleanM-IgD/raw/10000/cleanM-IgD_10000_iced.matrix -bed ./cleanZ-IgD/raw/10000/cleanZ-IgD_10000_abs.bed  -n F-IgDn Z-IgDn M-IgDn -chr chrX -r 10000 -o FZMIGDpair -c 1 -s 250 -e 300 -ext pdf -tri 1 -p 1 &
+
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-naive/raw/10000/cleanF-naive_10000_iced.matrix  ./cleanZ-naive/raw/10000/cleanZ-naive_10000_iced.matrix ./cleanM-naive/raw/10000/cleanM-naive_10000_iced.matrix -bed ./cleanZ-naive/raw/10000/cleanZ-naive_10000_abs.bed  -n F-naive Z-naive M-naive -chr chrX -r 10000 -o FZMNAIVEpair -c 1 -s 250 -e 300 -ext pdf -tri 1 -p 1 &
+
+
+###orange
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-IgD/raw/10000/cleanF-IgD_10000_iced.matrix  ./cleanZ-IgD/raw/10000/cleanZ-IgD_10000_iced.matrix ./cleanM-IgD/raw/10000/cleanM-IgD_10000_iced.matrix -bed ./cleanZ-IgD/raw/10000/cleanZ-IgD_10000_abs.bed  -n F-IgDn Z-IgDn M-IgDn -chr chrX -r 10000 -o FZMIGDpair -c 1 -s 100 -e 150 -ext pdf -tri 1 -p 1 &
+
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-naive/raw/10000/cleanF-naive_10000_iced.matrix  ./cleanZ-naive/raw/10000/cleanZ-naive_10000_iced.matrix ./cleanM-naive/raw/10000/cleanM-naive_10000_iced.matrix -bed ./cleanZ-naive/raw/10000/cleanZ-naive_10000_abs.bed  -n F-naive Z-naive M-naive -chr chrX -r 10000 -o FZMNAIVEpair -c 1 -s 100 -e 150 -ext pdf -tri 1 -p 1 &
+
+
+###blue
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-IgD/raw/10000/cleanF-IgD_10000_iced.matrix  ./cleanZ-IgD/raw/10000/cleanZ-IgD_10000_iced.matrix ./cleanM-IgD/raw/10000/cleanM-IgD_10000_iced.matrix -bed ./cleanZ-IgD/raw/10000/cleanZ-IgD_10000_abs.bed  -n F-IgDn Z-IgDn M-IgDn -chr chrX -r 10000 -o FZMIGDpair -c 1 -s 7350 -e 7400 -ext pdf -tri 1 -p 1 &
+
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-naive/raw/10000/cleanF-naive_10000_iced.matrix  ./cleanZ-naive/raw/10000/cleanZ-naive_10000_iced.matrix ./cleanM-naive/raw/10000/cleanM-naive_10000_iced.matrix -bed ./cleanZ-naive/raw/10000/cleanZ-naive_10000_abs.bed  -n F-naive Z-naive M-naive -chr chrX -r 10000 -o FZMNAIVEpair -c 1 -s 7350 -e 7400 -ext pdf -tri 1 -p 1 &
+
+
+
+###grey
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-IgD/raw/10000/cleanF-IgD_10000_iced.matrix  ./cleanZ-IgD/raw/10000/cleanZ-IgD_10000_iced.matrix ./cleanM-IgD/raw/10000/cleanM-IgD_10000_iced.matrix -bed ./cleanZ-IgD/raw/10000/cleanZ-IgD_10000_abs.bed  -n F-IgDn Z-IgDn M-IgDn -chr chrX -r 10000 -o FZMIGDpair -c 1 -s 10750 -e 10800 -ext pdf -tri 1 -p 1 &
+
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-naive/raw/10000/cleanF-naive_10000_iced.matrix  ./cleanZ-naive/raw/10000/cleanZ-naive_10000_iced.matrix ./cleanM-naive/raw/10000/cleanM-naive_10000_iced.matrix -bed ./cleanZ-naive/raw/10000/cleanZ-naive_10000_abs.bed  -n F-naive Z-naive M-naive -chr chrX -r 10000 -o FZMNAIVEpair -c 1 -s 10750 -e 10800 -ext pdf -tri 1 -p 1 &
+
+##olive
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-IgD/raw/10000/cleanF-IgD_10000_iced.matrix  ./cleanZ-IgD/raw/10000/cleanZ-IgD_10000_iced.matrix ./cleanM-IgD/raw/10000/cleanM-IgD_10000_iced.matrix -bed ./cleanZ-IgD/raw/10000/cleanZ-IgD_10000_abs.bed  -n F-IgDn Z-IgDn M-IgDn -chr chrX -r 10000 -o FZMIGDpair -c 1 -s 11900 -e 11950 -ext pdf -tri 1 -p 1 &
+
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-naive/raw/10000/cleanF-naive_10000_iced.matrix  ./cleanZ-naive/raw/10000/cleanZ-naive_10000_iced.matrix ./cleanM-naive/raw/10000/cleanM-naive_10000_iced.matrix -bed ./cleanZ-naive/raw/10000/cleanZ-naive_10000_abs.bed  -n F-naive Z-naive M-naive -chr chrX -r 10000 -o FZMNAIVEpair -c 1 -s 11900 -e 11950 -ext pdf -tri 1 -p 1 &
+
+##egg
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-IgD/raw/10000/cleanF-IgD_10000_iced.matrix  ./cleanZ-IgD/raw/10000/cleanZ-IgD_10000_iced.matrix ./cleanM-IgD/raw/10000/cleanM-IgD_10000_iced.matrix -bed ./cleanZ-IgD/raw/10000/cleanZ-IgD_10000_abs.bed  -n F-IgDn Z-IgDn M-IgDn -chr chrX -r 10000 -o FZMIGDpair -c 1 -s 15350 -e 15400 -ext pdf -tri 1 -p 1 &
+
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-naive/raw/10000/cleanF-naive_10000_iced.matrix  ./cleanZ-naive/raw/10000/cleanZ-naive_10000_iced.matrix ./cleanM-naive/raw/10000/cleanM-naive_10000_iced.matrix -bed ./cleanZ-naive/raw/10000/cleanZ-naive_10000_abs.bed  -n F-naive Z-naive M-naive -chr chrX -r 10000 -o FZMNAIVEpair -c 1 -s 15350 -e 15400 -ext pdf -tri 1 -p 1 &
+
+##white
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-IgD/raw/10000/cleanF-IgD_10000_iced.matrix  ./cleanZ-IgD/raw/10000/cleanZ-IgD_10000_iced.matrix ./cleanM-IgD/raw/10000/cleanM-IgD_10000_iced.matrix -bed ./cleanZ-IgD/raw/10000/cleanZ-IgD_10000_abs.bed  -n F-IgDn Z-IgDn M-IgDn -chr chrX -r 10000 -o FZMIGDpair -c 1 -s 15400 -e 15450 -ext pdf -tri 1 -p 1 &
+
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-naive/raw/10000/cleanF-naive_10000_iced.matrix  ./cleanZ-naive/raw/10000/cleanZ-naive_10000_iced.matrix ./cleanM-naive/raw/10000/cleanM-naive_10000_iced.matrix -bed ./cleanZ-naive/raw/10000/cleanZ-naive_10000_abs.bed  -n F-naive Z-naive M-naive -chr chrX -r 10000 -o FZMNAIVEpair -c 1 -s 15400 -e 15450 -ext pdf -tri 1 -p 1 &
+
+
+##BCL11A_Chromosome 2: 60,450,520-60,554,467 
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-IgD/raw/10000/cleanF-IgD_10000_iced.matrix  ./cleanZ-IgD/raw/10000/cleanZ-IgD_10000_iced.matrix ./cleanM-IgD/raw/10000/cleanM-IgD_10000_iced.matrix -bed ./cleanZ-IgD/raw/10000/cleanZ-IgD_10000_abs.bed  -n F-IgDn Z-IgDn M-IgDn -chr chr2 -r 10000 -o FZMIGDpair -c 1 -s 6025 -e 6075 -ext pdf -tri 1 -p 1 &
+
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-naive/raw/10000/cleanF-naive_10000_iced.matrix  ./cleanZ-naive/raw/10000/cleanZ-naive_10000_iced.matrix ./cleanM-naive/raw/10000/cleanM-naive_10000_iced.matrix -bed ./cleanZ-naive/raw/10000/cleanZ-naive_10000_abs.bed  -n F-naive Z-naive M-naive -chr chr2 -r 10000 -o FZMNAIVEpair -c 1 -s 6025 -e 6075 -ext pdf -tri 1 -p 1 &
+
+
+##GAPDH_Chromosome 12: 6,534,512-6,538,374
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-IgD/raw/10000/cleanF-IgD_10000_iced.matrix  ./cleanZ-IgD/raw/10000/cleanZ-IgD_10000_iced.matrix ./cleanM-IgD/raw/10000/cleanM-IgD_10000_iced.matrix -bed ./cleanZ-IgD/raw/10000/cleanZ-IgD_10000_abs.bed  -n F-IgDn Z-IgDn M-IgDn -chr chr12 -r 10000 -o FZMIGDpair -c 1 -s 620  -e  670 -ext pdf -tri 1 -p 1 &
+
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-naive/raw/10000/cleanF-naive_10000_iced.matrix  ./cleanZ-naive/raw/10000/cleanZ-naive_10000_iced.matrix ./cleanM-naive/raw/10000/cleanM-naive_10000_iced.matrix -bed ./cleanZ-naive/raw/10000/cleanZ-naive_10000_abs.bed  -n F-naive Z-naive M-naive -chr chr12 -r 10000 -o FZMNAIVEpair -c 1 -s  620 -e 670 -ext pdf -tri 1 -p 1 &
+
+##GAPDH_Chromosome 12: 6,534,512-6,538,374
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-IgD/raw/10000/cleanF-IgD_10000_iced.matrix  ./cleanZ-IgD/raw/10000/cleanZ-IgD_10000_iced.matrix ./cleanM-IgD/raw/10000/cleanM-IgD_10000_iced.matrix -bed ./cleanZ-IgD/raw/10000/cleanZ-IgD_10000_abs.bed  -n F-IgDn Z-IgDn M-IgDn -chr chr12 -r 10000 -o FZMIGDpair -c 1 -s 620  -e  670 -ext pdf -tri 1 -p 1 &
+
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-naive/raw/10000/cleanF-naive_10000_iced.matrix  ./cleanZ-naive/raw/10000/cleanZ-naive_10000_iced.matrix ./cleanM-naive/raw/10000/cleanM-naive_10000_iced.matrix -bed ./cleanZ-naive/raw/10000/cleanZ-naive_10000_abs.bed  -n F-naive Z-naive M-naive -chr chr12 -r 10000 -o FZMNAIVEpair -c 1 -s  620 -e 670 -ext pdf -tri 1 -p 1 &
+
+
+##GAPDH_Chromosome 12: 6,534,512-6,538,374
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-IgD/raw/10000/cleanF-IgD_10000_iced.matrix  ./cleanZ-IgD/raw/10000/cleanZ-IgD_10000_iced.matrix ./cleanM-IgD/raw/10000/cleanM-IgD_10000_iced.matrix -bed ./cleanZ-IgD/raw/10000/cleanZ-IgD_10000_abs.bed  -n F-IgDn Z-IgDn M-IgDn -chr chr12 -r 10000 -o FZMIGDpair -c 1 -s 640  -e  660 -ext pdf -tri 1 -p 1 &
+
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-naive/raw/10000/cleanF-naive_10000_iced.matrix  ./cleanZ-naive/raw/10000/cleanZ-naive_10000_iced.matrix ./cleanM-naive/raw/10000/cleanM-naive_10000_iced.matrix -bed ./cleanZ-naive/raw/10000/cleanZ-naive_10000_abs.bed  -n F-naive Z-naive M-naive -chr chr12 -r 10000 -o FZMNAIVEpair -c 1 -s  640 -e 660 -ext pdf -tri 1 -p 1 &
+
+##ACTB_Chromosome 7: 5,526,409-5,563,902
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-IgD/raw/10000/cleanF-IgD_10000_iced.matrix  ./cleanZ-IgD/raw/10000/cleanZ-IgD_10000_iced.matrix ./cleanM-IgD/raw/10000/cleanM-IgD_10000_iced.matrix -bed ./cleanZ-IgD/raw/10000/cleanZ-IgD_10000_abs.bed  -n F-IgDn Z-IgDn M-IgDn -chr chr7 -r 10000 -o FZMIGDpair -c 1 -s 520  -e  570 -ext pdf -tri 1 -p 1 &
+
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-naive/raw/10000/cleanF-naive_10000_iced.matrix  ./cleanZ-naive/raw/10000/cleanZ-naive_10000_iced.matrix ./cleanM-naive/raw/10000/cleanM-naive_10000_iced.matrix -bed ./cleanZ-naive/raw/10000/cleanZ-naive_10000_abs.bed  -n F-naive Z-naive M-naive -chr chr7 -r 10000 -o FZMNAIVEpair -c 1 -s  520 -e 570 -ext pdf -tri 1 -p 1 &
+
+##FOS_Chromosome 14: 75,278,826-75,282,230
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-IgD/raw/10000/cleanF-IgD_10000_iced.matrix  ./cleanZ-IgD/raw/10000/cleanZ-IgD_10000_iced.matrix ./cleanM-IgD/raw/10000/cleanM-IgD_10000_iced.matrix -bed ./cleanZ-IgD/raw/10000/cleanZ-IgD_10000_abs.bed  -n F-IgDn Z-IgDn M-IgDn -chr chr14 -r 10000 -o FZMIGDpair -c 1 -s 7500  -e  7550 -ext pdf -tri 1 -p 1 &
+
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-naive/raw/10000/cleanF-naive_10000_iced.matrix  ./cleanZ-naive/raw/10000/cleanZ-naive_10000_iced.matrix ./cleanM-naive/raw/10000/cleanM-naive_10000_iced.matrix -bed ./cleanZ-naive/raw/10000/cleanZ-naive_10000_abs.bed  -n F-naive Z-naive M-naive -chr chr14 -r 10000 -o FZMNAIVEpair -c 1 -s  7500 -e 7550 -ext pdf -tri 1 -p 1 &
+
+##FOSB_Chromosome 19: 45,467,995-45,475,179
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-IgD/raw/10000/cleanF-IgD_10000_iced.matrix  ./cleanZ-IgD/raw/10000/cleanZ-IgD_10000_iced.matrix ./cleanM-IgD/raw/10000/cleanM-IgD_10000_iced.matrix -bed ./cleanZ-IgD/raw/10000/cleanZ-IgD_10000_abs.bed  -n F-IgDn Z-IgDn M-IgDn -chr chr19 -r 10000 -o FZMIGDpair -c 1 -s 4510  -e  4560 -ext pdf -tri 1 -p 1 &
+
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-naive/raw/10000/cleanF-naive_10000_iced.matrix  ./cleanZ-naive/raw/10000/cleanZ-naive_10000_iced.matrix ./cleanM-naive/raw/10000/cleanM-naive_10000_iced.matrix -bed ./cleanZ-naive/raw/10000/cleanZ-naive_10000_abs.bed  -n F-naive Z-naive M-naive -chr chr19 -r 10000 -o FZMNAIVEpair -c 1 -s  4510 -e 4560 -ext pdf -tri 1 -p 1 &
+
+
+##JUN_Chromosome 1: 58,776,845-58,784,048 
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-IgD/raw/10000/cleanF-IgD_10000_iced.matrix  ./cleanZ-IgD/raw/10000/cleanZ-IgD_10000_iced.matrix ./cleanM-IgD/raw/10000/cleanM-IgD_10000_iced.matrix -bed ./cleanZ-IgD/raw/10000/cleanZ-IgD_10000_abs.bed  -n F-IgDn Z-IgDn M-IgDn -chr chr1 -r 10000 -o FZMIGDpair -c 1 -s 5840  -e  5890 -ext pdf -tri 1 -p 1 &
+
+nohup python /home/zhoujiaqi/software/HiCPlotter-master/HiCPlotter.py -f ./cleanF-naive/raw/10000/cleanF-naive_10000_iced.matrix  ./cleanZ-naive/raw/10000/cleanZ-naive_10000_iced.matrix ./cleanM-naive/raw/10000/cleanM-naive_10000_iced.matrix -bed ./cleanZ-naive/raw/10000/cleanZ-naive_10000_abs.bed  -n F-naive Z-naive M-naive -chr chr1 -r 10000 -o FZMNAIVEpair -c 1 -s  5840 -e 5890 -ext pdf -tri 1 -p 1 &
+
+
+#-hist ./CDB10kb/ZD3.txt -hl Z_IgD_CDB 
+#chr gene
+
+
+

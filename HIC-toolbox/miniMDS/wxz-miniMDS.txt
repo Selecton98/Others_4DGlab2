@@ -1,0 +1,42 @@
+#ice the matrix
+nohup /home/zhoujiaqi/software/ice --results_filename 2-1_40000_iced.matrix --max_iter 100  --filter_low_counts_perc  0.02 --filter_high_counts_perc 0 --eps 0.1 --remove-all-zeros-loci /data02/zhoujiaqi/hic_NSPC1/Cleandata/2-1/Clean-result/hic_results/matrix/2-1/raw/40000/2-1_40000.matrix &
+
+nohup /home/zhoujiaqi/software/ice --results_filename cleanZ-naive_40000_iced.matrix --max_iter 100  --filter_low_counts_perc  0.02 --filter_high_counts_perc 0 --eps 0.1 --remove-all-zeros-loci cleanZ-naive_40000.matrix &
+
+nohup /home/zhoujiaqi/software/ice --results_filename cleanM-IgD_40000_iced.matrix --max_iter 100  --filter_low_counts_perc  0.02 --filter_high_counts_perc 0 --eps 0.1 --remove-all-zeros-loci cleanM-IgD_40000.matrix &
+
+##miniMDS
+
+nohup python /home/zhoujiaqi/software/miniMDS-master/miniMDS-master/minimds.py  -m 0.01 -p 0.01 -n 4  2-4_X_40kb.bed > minimdspar.log 2>&1 &
+
+nohup python /home/zhoujiaqi/software/miniMDS-master/miniMDS-master/minimds.py  -l 5  -n 4  cleanZ-naive_X_40kb.bed > minimdspar.log 2>&1 &
+
+##nohup python /home/zhoujiaqi/software/miniMDS-master/miniMDS-master/minimds_inter.py cleanM-naive/cleanM-naive 40000 40000 &
+
+nohup python /home/zhoujiaqi/software/miniMDS-master/miniMDS-master/minimds.py -m 0.5 -p 1 cleanZ-naive/cleanZ-naive_X_40kb.bed &
+nohup python /home/zhoujiaqi/software/miniMDS-master/miniMDS-master/minimds.py  -m 0.5 -p 1 cleanM-naive/cleanM-naive_X_40kb.bed &
+nohup python /home/zhoujiaqi/software/miniMDS-master/miniMDS-master/minimds.py -m 0.5 -p 1 cleanM-IgD/cleanM-IgD_X_40kb.bed &
+
+python /home/zhoujiaqi/software/miniMDS-master/miniMDS-master/minimds_inter.py cleanF-IgD 500000 5000
+
+##python /home/zhoujiaqi/software/miniMDS-master/miniMDS-master/scripts/distance_decay.py cleanZ-naive_X_40kb.bed
+
+
+
+
+
+#python on PC(3D plot)
+C:\Users\123\pkg\miniMDS-master\miniMDS-master
+python
+import data_tools
+import plotting
+structure = data_tools.structure_from_file("cleanZ-naive_X_40kb_structure.tsv")
+structure = data_tools.structure_from_file("cleanZ-naive_X_500kb_structure.tsv")
+structure = data_tools.structure_from_file("cleanZ-IgD_X_500kb_structure.tsv")
+
+plotting.plot_structure_interactive(structure, radius=0.01,color=(0,0.5,0.7))
+plotting.plot_structures_interactive(structure, cut=True)
+chroms = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 'X')
+structures = [data_tools.structure_from_file("cleanZ-naive_{}_40kb_structure.tsv".format(chrom) for chrom in chroms)]
+
+

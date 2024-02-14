@@ -1,0 +1,5 @@
+bart3d -t ./H--IgD.allValidPairs.hic -c ./H--naive.allValidPairs.hic -f hic -s hg38 --outdir ./ --genomicDistance 200000 --resolution 5000 --outFileName HZiVZn
+
+bart3d -t ./HF--IgD.allValidPairs.hic -c ./HF--naive.allValidPairs.hic -f hic -s hg38 --outdir ./ --genomicDistance 200000 --resolution 5000 --outFileName HFiVFn
+
+bart3d -t ./HM--IgD.allValidPairs.hic -c ./HM--naive.allValidPairs.hic -f hic -s hg38 --outdir ./ --genomicDistance 200000 --resolution 5000 --outFileName HMiVMn

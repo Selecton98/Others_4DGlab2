@@ -1,0 +1,32 @@
+#misson:重做TS和NSPC1的上游。hg38,mm10
+
+(1)BOWTIE2_IDX_PATH=? #ok
+nohup bowtie2-build /data02/zhoujiaqi/index/GRCh38.p13.genome.fa bowtie.index.hg38 &
+
+(2)GENOME_SIZE = /home/zhoujiaqi/software/HiC-Pro-master/annotation/chrom_hg38.sizes
+
+(3)/data02/zhoujiaqi/index/hg38_ggcc.bed #ok
+/home/zhoujiaqi/software/HiC-Pro-master/bin/utils/digest_genome.py -r GG^CC -o /data02/zhoujiaqi/index/hg38_ggcc.bed /data02/zhoujiaqi/index/GRCh38.p13.genome.fa
+
+(4)sparsetodense?
+/home/zhoujiaqi/software/HiC-Pro-master/bin/utils/sparseToDense.py -b hic_results/matrix/dixon_2M/raw/1000000/dixon_2M_1000000_abs.bed hic_results/matrix/dixon_2M/iced/1000000/dixon_2M_1000000_iced.matrix
+直接转hic似乎也不需要这个。
+
+
+nohup /home/zhoujiaqi/software/fastp-master/fastp --thread 6 -i /data02/zywang/Turner/HiCData/PM-BJ192395-02清华大学3个外来文库包6条lane测序过滤任务单/ANCBJ192395_PM-BJ192395-02_2019-09-06/Rawdata/ZWJ-naive/ZWJ-naive_R1.fq.gz -o cleanZ-naive_2_R1.fq.gz -I /data02/zywang/Turner/HiCData/PM-BJ192395-02清华大学3个外来文库包6条lane测序过滤任务单/ANCBJ192395_PM-BJ192395-02_2019-09-06/Rawdata/ZWJ-naive/ZWJ-naive_R2.fq.gz -O cleanZ-naive_2_R2.fq.gz -j Z-naive_2.fastp.json -h Z-naive_2.fastp.html &
+
+nohup /home/zhoujiaqi/software/fastp-master/fastp --thread 10 -i 2-4-3_R1.fq.gz -o clean2-4-3_R1.fq.gz -I 2-4-3_R2.fq.gz -O clean2-4-3_R2.fq.gz -j re2-4-3.fastp.json -h re2-4-3.fastp.html & 
+
+nohup /home/zhoujiaqi/software/fastp-master/fastp --thread 10 -i 2-3-2_R1.fq.gz -o clean2-3-2_R1.fq.gz -I 2-3-2_R2.fq.gz -O clean2-3-2_R2.fq.gz -j re2-3-2.fastp.json -h re2-3-2.fastp.html & 
+
+
+
+nohup /home/zhoujiaqi/software/fastp-master/fastp --thread 6 -i /data02/zywang/Turner/HiCData/PM-BJ192395-02清华大学3个外来文库包6条lane测序过滤任务单/ANCBJ192395_PM-BJ192395-02_2019-09-06/Rawdata/ZWJ-naive/ZWJ-naive_R1.fq.gz -o cleanZ-naive_2_R1.fq.gz -I /data02/zywang/Turner/HiCData/PM-BJ192395-02清华大学3个外来文库包6条lane测序过滤任务单/ANCBJ192395_PM-BJ192395-02_2019-09-06/Rawdata/ZWJ-naive/ZWJ-naive_R2.fq.gz -O cleanZ-naive_2_R2.fq.gz -j Z-naive_2.fastp.json -h Z-naive_2.fastp.html &
+
+nohup /home/zhoujiaqi/software/fastp-master/fastp --thread 6 -i /data02/zywang/Turner/HiCData/PM-BJ192395-03/ANCBJ192395_PM-BJ192395-03_2019-09-17/Rawdata/ZWJ-IgD-/ZWJ-IgD-_R1.fq.gz -o cleanZ-IgD_2_R1.fq.gz -I /data02/zywang/Turner/HiCData/PM-BJ192395-03/ANCBJ192395_PM-BJ192395-03_2019-09-17/Rawdata/ZWJ-IgD-/ZWJ-IgD-_R2.fq.gz -O cleanZ-IgD_2_R2.fq.gz -j Z-IgD_2.fastp.json -h Z-IgD_2.fastp.html &
+
+#ice 有问题
+/home/zhoujiaqi/miniconda2/envs/HICPRO/bin/HiC-Pro_2.11.4/bin/HiC-Pro -i ./matrix -o ./icenorm -c ./0422config-hicpro-mm10-2.txt  -s ice_norm
+
+
+

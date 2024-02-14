@@ -1,0 +1,29 @@
+bart3d -t /data02/zhoujiaqi/hic-20200924/Cleandata-result/hic_results/data/2-4/2-4.allValidPairs.hic -c /data02/zhoujiaqi/hic-20200924/Cleandata-result/hic_results/data/2-1/2-1.allValidPairs.hic -f hic -s mm10 --outdir ./ --genomicDistance 200000 --resolution 5000 --outFileName 2-4vs2-1
+
+#############################
+bart3d -t ./2-4.allValidPairs.hic -c ./2-1.allValidPairs.hic -f hic -s mm10 --outdir ./ --genomicDistance 200000 --resolution 5000 --outFileName 2-4vs2-1
+
+
+bart3d -t ./2-2.allValidPairs.hic -c ./2-1.allValidPairs.hic -f hic -s mm10 --outdir ./ --genomicDistance 200000 --resolution 5000  --outFileName 2-2vs2-1
+
+#
+bart3d -t ./2-4.allValidPairs.hic -c ./2-3.allValidPairs.hic -f hic -s mm10 --outdir ./ --genomicDistance 200000 --resolution 5000 --outFileName 2-4vs2-3
+
+#
+bart3d -t ./2-2.allValidPairs.hic -c ./2-3.allValidPairs.hic -f hic -s mm10 --outdir ./ --genomicDistance 200000 --resolution 5000 --outFileName 2-2vs2-3
+
+##############################
+bart3d -t ./cleanZ-naive.allValidPairs.hic -c ./cleanM-naive.allValidPairs.hic -f hic -s hg38 --outdir ./ --genomicDistance 200000 --resolution 5000 --outFileName ZnVSMn
+
+bart3d -t ./cleanM-IgD.allValidPairs.hic -c ./cleanM-naive.allValidPairs.hic -f hic -s hg38 --outdir ./ --genomicDistance 200000 --resolution 5000 --outFileName MiVSMn
+
+bart3d -t ./cleanZ-naive.allValidPairs.hic -c ./cleanF-naive.allValidPairs.hic -f hic -s hg38 --outdir ./ --genomicDistance 200000 --resolution 5000 --outFileName ZnVSFn
+
+bart3d -t ./cleanF-IgD.allValidPairs.hic -c ./cleanF-naive.allValidPairs.hic -f hic -s hg38 --outdir ./ --genomicDistance 200000 --resolution 5000 --outFileName FiVSFn
+
+##
+bart3d -t ./cleanZ-IgD.allValidPairs.hic -c ./cleanZ-naive.allValidPairs.hic -f hic -s hg38 --outdir ./ --genomicDistance 200000 --resolution 5000 --outFileName ZiVZn
+
+bart3d -t ./cleanZ-IgD.allValidPairs.hic -c ./cleanM-IgD.allValidPairs.hic -f hic -s hg38 --outdir ./ --genomicDistance 200000 --resolution 5000 --outFileName ZiVMi
+
+bart3d -t ./cleanZ-IgD.allValidPairs.hic -c ./cleanF-IgD.allValidPairs.hic -f hic -s hg38 --outdir ./ --genomicDistance 200000 --resolution 5000 --outFileName ZiVFi

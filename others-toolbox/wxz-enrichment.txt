@@ -1,0 +1,36 @@
+bedtools intersect -a deseqdw.12.anno.bed -b AtoB22VS23.bed -loj  > dw_AtoB_22VS23.bed
+bedtools intersect -a deseqdw.12.anno.bed -b BtoA22VS23.bed -loj  > dw_BtoA_22VS23.bed
+bedtools intersect -a desequp.12.anno.bed -b AtoB22VS23.bed -loj  > up_AtoB_22VS23.bed
+bedtools intersect -a desequp.12.anno.bed -b BtoA22VS23.bed -loj  > up_BtoA_22VS23.bed
+
+bedtools intersect -a deseqdw.12.anno.bed -b AtoB24VS21.bed -loj  > dw_AtoB_24VS21.bed
+bedtools intersect -a deseqdw.12.anno.bed -b BtoA24VS21.bed -loj  > dw_BtoA_24VS21.bed
+bedtools intersect -a desequp.12.anno.bed -b AtoB24VS21.bed -loj  > up_AtoB_24VS21.bed
+bedtools intersect -a desequp.12.anno.bed -b BtoA24VS21.bed -loj  > up_BtoA_24VS21.bed
+
+bedtools intersect -a desequp.12.anno.bed -b new_noname_A12cko.bed -loj  > up__A12cko.bed
+bedtools intersect -a deseqdw.12.anno.bed -b new_noname_A12cko.bed -loj  > dw__A12cko.bed
+bedtools intersect -a desequp.12.anno.bed -b new_noname_A12wt.bed -loj  > up__A12wt.bed
+bedtools intersect -a deseqdw.12.anno.bed -b new_noname_A12wt.bed -loj  > dw__A12wt.bed
+
+
+bedtools intersect -a new_noname_A12cko.bed -b AtoB22VS23.bed -loj  > A12cko__AtoB22VS23.bed
+bedtools intersect -a new_noname_A12wt.bed -b AtoB22VS23.bed -loj  > A12wt__AtoB22VS23.bed
+bedtools intersect -a new_noname_A12cko.bed -b BtoA22VS23.bed -loj  > A12cko__BtoA22VS23.bed
+bedtools intersect -a new_noname_A12wt.bed -b BtoA22VS23.bed -loj  > A12wt__BtoA22VS23.bed
+
+bedtools intersect -a new_noname_A12cko.bed -b AtoB24VS21.bed -loj  > A12cko__AtoB24VS21.bed
+bedtools intersect -a new_noname_A12wt.bed -b AtoB24VS21.bed -loj  > A12wt__AtoB24VS21.bed
+bedtools intersect -a new_noname_A12cko.bed -b BtoA24VS21.bed -loj  > A12cko__BtoA24VS21.bed
+bedtools intersect -a new_noname_A12wt.bed -b BtoA24VS21.bed -loj  > A12wt__BtoA24VS21.bed
+
+###
+bedtools intersect -a deseqdw.12.anno.bed -b ckoAWTB.bed -loj  > dw_ckoAWTB.bed
+bedtools intersect -a desequp.12.anno.bed -b ckoAWTB.bed -loj  > up_ckoAWTB.bed
+bedtools intersect -a deseqdw.12.anno.bed -b ckoBWTA.bed -loj  > dw_ckoBWTA.bed
+bedtools intersect -a desequp.12.anno.bed -b ckoBWTA.bed -loj  > up_ckoBWTA.bed
+
+bedtools intersect -a new_noname_A12wt.bed -b ckoAWTB.bed -loj  > A12wt_ckoAWTB.bed
+bedtools intersect -a new_noname_A12cko.bed -b ckoAWTB.bed -loj  > A12cko_ckoAWTB.bed
+bedtools intersect -a new_noname_A12wt.bed  -b ckoBWTA.bed -loj  > A12wt_ckoBWTA.bed
+bedtools intersect -a new_noname_A12cko.bed -b ckoBWTA.bed -loj  > A12cko_ckoBWTA.bed
